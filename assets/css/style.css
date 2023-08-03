@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9AC5F4;
+}
+
+.navbar{
+    background-color: #937DC2;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+    padding: 5px 0 0 70px;
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Pacifico', cursive;
+}
+
+.tools{
+    display: flex;
+    gap: 15px;
+    padding: 20px 50px 0 0;
+}
+
+.home a, .op a, .cu a{
+    text-decoration: none;
+    background-color: #9AC5F4;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home a:hover, .op a:hover, .cu a:hover{
+    background-color: palegreen;
+    font-weight: bold;
+}
+
+.container-satu{
+    max-width: 1000px;
+    background-color: white;
+    height: 170px;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+#title, .subtitle{
+    text-align: center;
+    padding: 70px 0 15px 0;
+    box-sizing: border-box;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.subtitle{
+    text-align: center;
+    padding: 20px 0 15px 0;
+    box-sizing: border-box;
+}
+
+.container-dua{
+    max-width: 1000px;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.box{
+    width: 350px;
+    height: 700px;
+    margin: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.konten{
+    width: 560px;
+    height: 100px;
+    margin: 10px 0 10px 20px;
+}
+
+.konten-1{
+    background-image: url(../img/frontend.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%, 50%;
+    flex: 1;
+    border-radius: 20px;
+    position: relative;
+}
+
+.konten-2{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.konten-3{
+    flex: 1;
+}
+
+.flex-satu{
+    flex: 1;
+}
+
+.flex-dua{
+    background-color: #937DC2;
+    margin: 25px 30px 0 30px;
+    box-sizing: border-box;
+}
+
+ol, li{
+    padding: 20px 0 10px 25px;
+}
+
+li:hover{
+    background-color: #937DC2;
+}
+
+.tagname{
+    padding: 20px 10px 10px 10px;
+}
+
+.headform{
+    padding: 25px;
+    color: white;
+}
+
+.hform{
+    margin: 20px 0 0 0;
+}
+
+label, input, button, select{
+    width: 90%;
+    display: block;
+    margin: 5px 0 0 20px;
+    padding: 10px 0 10px 5px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+select, button{
+    color: black;
+    margin-bottom: 20px;
+}
+
+.container-tiga{
+    max-width: 1000px;
+    height: 100px;
+    background-color: white;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo{
+        margin-right: 50px;
+    }
+
+    .tools{
+        margin: 5px 0 5px 50px;
+    }
+
+    .container-satu{
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 80px;
+        margin-bottom: 150px;
+    }
+
+    .container-dua{
+        flex-direction: column;
+        width: auto;
+        height: 1170px;
+    }
+
+    .box{
+        height: auto;
+        margin: auto;
+    }
+
+    .konten{
+        width: auto;
+        height: auto;
+    }
+
+    .konten-1{
+        background-image: url(../img/frontend1.jpg);
+        background-repeat: no-repeat;
+        align-items: center;
+        width: auto;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .flex-dua{
+        background-color: #937DC2;
+        margin-bottom: 20px;
+        height: 500px;
+    }
+
+    }
